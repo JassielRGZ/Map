@@ -8,14 +8,23 @@ location_names = df['Location']  # Assuming the column is named 'Location'
 ###Map Coordinates
 
 coordinates = {
-    "Women's Hospital": (600, 2450),
+    "Women's Hospital": (650, 230),
     'Emergency Room': (1850, 1900),
+    'Medical Office Building': (1240,525),
+    'Plastics and Reconstructive Surgery': (1230, 510),
+    'Orthopedic Sports and Therapy Institute Clinic': (1050,380),
+    'Oncology Institute': (630,200),
+    'GME Family Medicine': (940, 550), 
+    "Women's Cafeteria": (610, 210),
+    'Human Resources': (690, 80),
+    'Diabetes and Endocrinology Institute': (910,200)
+    
     # Add more location names and their coordinates
 
 }
 
 # Load campus map
-campus_map = Image.open('Map.jpg')
+campus_map = Image.open('Map.png')
 draw = ImageDraw.Draw(campus_map)
 
 # Load the pin icon image
@@ -48,4 +57,3 @@ label.pack()
 
 # Start the GUI loop
 root.mainloop()
-
